@@ -5,7 +5,7 @@
 var str = "Bob"
 //Declare function called palindrome that takes str as parameter
 function palindrome (str) {
-  //Declares a variable called arr and assigns it the value of 
+  //Declares a variable called arr and assigns it the value of
   //the variable string under the split method
   //which converts string into an an array with each character
   // as an item (because of the empty string ("") attached to .split
@@ -16,13 +16,13 @@ function palindrome (str) {
  return arr.join("") === arr.reverse().join("");
 };
 
-//This SOLUTION IS WHAT I SHOULD DO. The previous works, but 
+//This SOLUTION IS WHAT I SHOULD DO. The previous works, but
 //relies on order of operations in line 16, which I will forget.
 //instead in this solution I first assign arr.join('') and
 //arr.reverse.join('') to new variables arr2 and arr3.
 
 function palindrome (str) {
-  
+
   var arr = str.split("");
   //new code (see above)
   var arr2 = arr.join("");
@@ -63,7 +63,7 @@ function palindromeChecker (string) {
     //At every iteration i is subtracted by one
     for (var i = string.length - 1; i >= 0; i--) {
         //The character at index i of string is added to newString
-        newString = newString + string[i];  
+        newString = newString + string[i];
     }
 
     //Returns true if the two string are equal
