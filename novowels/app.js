@@ -1,6 +1,5 @@
 //***Set global variables
 var vowels = ['a','e','i','o','u','y'];
-var vowelArray = [];
 var string = "";
 var clone = [];
 //****String Prep****
@@ -16,6 +15,7 @@ var stringSplit = function (string) {
 };
 
 var arrayCreate = function (string) {
+  var vowelArray = [];
   for (var i = 0; i < string.length; i++) {
     for (var j = 0; j < vowels.length; j++) {
       if (string[i] === vowels[j]) {
@@ -137,24 +137,24 @@ function oneVowel (string) {
 //   else {console.log("There is more than one vowel");}
 // };
 
-function oneVowel (string) {
-  console.log(string);
-  stringUpcase(string);
-  stringSplit(string);
-  arrayCreate(string);
-  // cloneCreate(vowelArray);
-  var solution = vowelCheck(vowelArray);
-  console.log(solution);
-  console.log(vowelArray);
-  // codeCheck(string);
-}
+// function oneVowel (string) {
+//   console.log(string);
+//   stringUpcase(string);
+//   stringSplit(string);
+//   arrayCreate(string);
+//   // cloneCreate(vowelArray);
+//   var solution = vowelCheck(vowelArray);
+//   console.log(solution);
+//   console.log(vowelArray);
+//   // codeCheck(string);
+// }
 
-// oneVowel("purple");
-// oneVowel("ass");
-// oneVowel("rhadamanthine");
-oneVowel("redmeet");
-oneVowel("aaae");
-oneVowel('eeea;')
+// // oneVowel("purple");
+// // oneVowel("ass");
+// // oneVowel("rhadamanthine");
+// oneVowel("redmeet");
+// oneVowel("aaae");
+// oneVowel('eeea;')
 //***************
 
 // function oneVowel (string) {
