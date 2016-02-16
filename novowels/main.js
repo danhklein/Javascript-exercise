@@ -51,3 +51,8 @@ function vowelCheck (vowelArray) {
   }
   return true;
 }
+
+oneVowel("Ghost");
+oneVowel("Goose");
+oneVowel("horse");
+oneVowel("ooea");

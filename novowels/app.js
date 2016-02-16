@@ -1,7 +1,7 @@
 //***Set global variables
 var vowels = ['a','e','i','o','u','y'];
 var string = "";
-var clone = [];
+var vowelArray= [];
 //****String Prep****
 //Take String, change to upper case, split into array
 var stringUpcase = function (string) {
@@ -57,6 +57,11 @@ function oneVowel (string) {
   console.log(solution);
   console.log(vowelArray);
 }
+
+oneVowel("varsity");
+oneVowel("Ghost");
+oneVowel("goose");
+
 //   else {
 //     for (var j = i; j< clone.length; j++)
 //   }
