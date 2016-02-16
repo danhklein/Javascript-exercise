@@ -7,16 +7,12 @@ var Xox = function (input) {
   for (var i = 0; i <test.length; i++) {
     if (test.charAt(i)==="x") {
       xCounter++;
-    }
-   else if (test.charAt(i)==="o") {
+    } else if (test.charAt(i)==="o") {
       oCounter++;
-    }
-   else { return "String contains non-x's or o's" }
+    } else { return "String contains non-x's or o's" }
   }
-  if (xCounter%2===0 && oCounter%2===0) {
-    return true
-  }
-  else { return false }
+   return (xCounter%2===0 && oCounter%2===0)
 }
 
 console.log(Xox("xoxoxooo"));
+console.log(Xox("xoxooo"))
